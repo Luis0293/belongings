@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+{% block titulo %}
+<title>Criar Nova Conta</title>
+{% endblock %}
+
+{% block conteudo %}
+<center>
+    <p class="p-padding-3" ></p>
+    <p class="title-registo" >Criar nova Conta</p>
+    <br>
+    <form method="post">
+        <fieldset>
+            <p>Utilizador</p>
+            <input type="text" name="utilizador" required>
+            <p><br><br></p>
+            <p>Endereço de Email</p>
+            <input type="text" name="email" required>
+            <p><br><br></p>
+            <p>Palavra-Passe</p>
+            <input type="password" name="passe" required>
+            <p><br><br></p>
+            <p>Confirme a Passe</p>
+            <input type="password" name="cpasse" required>
+            <p><br></p>
+            <input type="submit" value="Submeter">
+        </fieldset>
+    </form>
+
+    {% if erro %}<h4>{{ erro }}</h4>{% endif %}
+</center>
+{% endblock %}

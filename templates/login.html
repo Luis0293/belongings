@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+{% block titulo %}
+<title>Iniciar Sessão</title>
+{% endblock %}
+
+{% block conteudo %}
+<center>
+    <p class="p-padding-3" ></p>
+    <p class="title-login" >Iniciar Sessão</p>
+    <br>
+    <form method="post">
+        <fieldset>
+            <p>Utilizador</p>
+            <input type="text" name="utilizador" required>
+            <p><br><br></p>
+            <p>Palavra-Passe</p>
+            <input type="password" name="passe" required>
+            <p><br></p>
+            <input type="submit" value="Iniciar Sessão">
+        </fieldset>
+    </form>
+    {% if erro %}<h4>{{ erro }}</h4>{% endif %}
+</center>
+{% endblock %}

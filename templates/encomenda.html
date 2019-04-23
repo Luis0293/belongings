@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+{% block titulo %}
+<title>Index</title>
+{% endblock %}
+
+{% block conteudo %}
+<center>
+    <p class="p-padding-3" ></p>
+    <p class="title-encomenda" >Obrigado por comprar na nossa loja!</p>
+    <p class="content-encomenda" >A sua encomenda foi registada com sucesso.</p>
+    <img src="/static/images/encomenda.png"><br>
+    <p class="p-padding-4" ></p>
+    <input type="button" value="Obter Comprovativo" onclick="window.open('/static/faturas/{{ fatura }}')">
+</center>
+{% endblock %}
