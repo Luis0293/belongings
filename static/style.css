@@ -191,7 +191,6 @@ td {
 
 .phone p, .email p, .marker p {
     display: inline-block;
-    text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 15px;
     padding: 10px;
